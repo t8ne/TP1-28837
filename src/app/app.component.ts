@@ -9,10 +9,9 @@ import { Router } from '@angular/router';
 export class AppComponent {
 
   constructor(private router: Router) {}
-
-  // Function to check if the side menu should be enabled
+  
   isMenuEnabled(): boolean {
-    // Check if the current route is one where the side menu should be enabled
+ 
     return this.router.url.includes('/tab1') || this.router.url.includes('/tab2');
   }
 }

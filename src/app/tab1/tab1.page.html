@@ -1,6 +1,5 @@
 <ion-menu contentId="main-content">
   <ion-header>
-    <!-- Set the custom background color for the toolbar -->
     <ion-toolbar style="--background: #37210a !important">
       <ion-title>Curiosidades</ion-title>
     </ion-toolbar>
@@ -24,7 +23,6 @@
 </ion-menu>
 <div class="ion-page" id="main-content"></div>
 <ion-header [translucent]="true">
-  <!-- Set the custom background color for the toolbar -->
   <ion-toolbar style="--background: #37210a !important">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
@@ -42,19 +40,15 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" class="ion-padding">
-  <!-- Grid with 1 column and 12 rows -->
   <div class="grid-container">
-    <!-- Row 1: White ball -->
     <div class="centered-item">
       <div class="white-ball"></div>
     </div>
 
-    <!-- Row 2: Vertical line -->
     <div class="centered-item">
       <ion-icon name="caret-down-outline" class="icon"></ion-icon>
     </div>
 
-    <!-- Row 4: First item -->
     <ion-item button detail="false" lines="none">
       <ion-label class="centered-label" [routerLink]="['/historia']">
         <h1><b>Tripas á Moda do Porto</b></h1>
@@ -62,12 +56,10 @@
       </ion-label>
     </ion-item>
 
-    <!-- Row 6: Vertical line -->
     <div class="centered-item">
       <ion-icon name="caret-down-outline" class="icon"></ion-icon>
     </div>
 
-    <!-- Row 8: Second item -->
     <ion-item button detail="false" lines="none">
       <ion-label class="centered-label" [routerLink]="['/historia2']">
         <h1><b>Caldo Verde</b></h1>
@@ -75,12 +67,10 @@
       </ion-label>
     </ion-item>
 
-    <!-- Row 9: White ball -->
     <div class="centered-item">
       <ion-icon name="caret-down-outline" class="icon"></ion-icon>
     </div>
 
-    <!-- Row 12: Third item -->
     <ion-item button detail="false" lines="none">
       <ion-label class="centered-label" [routerLink]="['/historia24']">
         <h1><b>Francesinha</b></h1>
@@ -92,49 +82,47 @@
       <ion-icon name="caret-down-outline" class="icon"></ion-icon>
     </div>
 
-    <!-- Additional Row: White ball -->
     <div class="centered-item">
       <div class="white-ball"></div>
     </div>
   </div>
 </ion-content>
 
-<!-- CSS for the grid -->
 <style>
   .grid-container {
     display: grid;
-    grid-template-columns: 1fr; /* One column */
-    grid-template-rows: repeat(12, auto); /* 12 rows */
-    gap: 10px; /* Adjust the gap between rows */
-    height: 100%; /* Ensure the grid fills the height of the screen */
-    justify-content: center; /* Center the items horizontally */
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, auto);
+    gap: 10px;
+    height: 100%;
+    justify-content: center;
   }
 
   .centered-item {
-    display: flex; /* Enable flexbox layout */
-    align-items: center; /* Center the items vertically */
-    justify-content: center; /* Center the items horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .white-ball {
-    width: 30px; /* Adjust the size of the ball */
-    height: 30px; /* Adjust the size of the ball */
-    border-radius: 50%; /* Shape the ball into a circle */
-    background-color: white; /* Set the color of the ball */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
   }
 
   .icon {
-    font-size: 4rem; /* Adjust the size of the icon */
+    font-size: 4rem;
   }
 
   ion-item {
-    border-radius: 20px; /* Adjust the smoothness of corners */
-    border: 2px solid white; /* Adjust the color and thickness of the border */
-    text-align: center; /* Center the content horizontally */
+    border-radius: 20px;
+    border: 2px solid white;
+    text-align: center;
   }
 
   .centered-label {
-    text-align: center; /* Center the content horizontally */
+    text-align: center;
   }
 
   .lista {
